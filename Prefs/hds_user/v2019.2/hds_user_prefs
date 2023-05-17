@@ -1271,6 +1271,7 @@ projectPaths [
 "C:\\Users\\axel.amand\\Desktop\\car-labs\\hdl\\Prefs\\hds.hdp"
 "C:\\dev\\car-labs\\hdl\\Prefs\\hds.hdp"
 "C:\\dev\\car-heirv\\Prefs\\hds.hdp"
+"C:\\Users\\noah.penchere\\Documents\\git\\2023-car-heirv-pencherek\\Prefs\\hds.hdp"
 ]
 libMappingsRootDir ""
 teamLibMappingsRootDir ""
@@ -1291,8 +1292,31 @@ exportedDirectories [
 exportStdIncludeRefs 1
 exportStdPackageRefs 1
 )
-printerName "Adobe PDF"
+printerName "\\\\vmenpprint1\\VS-ENP.23.N308-PRN"
 pageSizes [
+(PageSizeInfo
+name "Letter"
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Legal"
+type 5
+width 783
+height 1290
+)
+(PageSizeInfo
+name "Statement"
+type 6
+width 506
+height 783
+)
+(PageSizeInfo
+name "Executive"
+type 7
+width 667
+height 967
+)
 (PageSizeInfo
 name "A3"
 type 8
@@ -1306,226 +1330,106 @@ width 761
 height 1077
 )
 (PageSizeInfo
-name "A2"
-type 66
-width 1523
-height 2155
+name "A5"
+type 11
+width 536
+height 761
 )
 (PageSizeInfo
-name "Letter"
-type 119
-width 783
-height 1013
-)
-(PageSizeInfo
-name "Legal"
-type 120
-width 783
-height 1290
-)
-(PageSizeInfo
-name "Executive"
-type 121
-width 667
-height 967
-)
-(PageSizeInfo
-name "Ledger"
-type 122
-width 1566
-height 1013
-)
-(PageSizeInfo
-name "11 x 17"
-type 123
-width 1013
-height 1566
-)
-(PageSizeInfo
-name "Screen"
-type 124
-width 599
-height 477
-)
-(PageSizeInfo
-name "ANSI C"
-type 125
-width 1566
-height 2027
-)
-(PageSizeInfo
-name "ANSI D"
-type 126
-width 2027
-height 3133
-)
-(PageSizeInfo
-name "ANSI E"
-type 127
-width 3133
-height 4055
-)
-(PageSizeInfo
-name "ANSI F"
-type 128
-width 2580
-height 3686
-)
-(PageSizeInfo
-name "ARCH A"
-type 129
-width 829
-height 1105
-)
-(PageSizeInfo
-name "ARCH B"
-type 130
-width 1105
-height 1658
-)
-(PageSizeInfo
-name "ARCH C"
-type 131
-width 1658
-height 2211
-)
-(PageSizeInfo
-name "ARCH D"
-type 132
-width 2211
-height 3317
-)
-(PageSizeInfo
-name "ARCH E"
-type 133
-width 3317
-height 4423
-)
-(PageSizeInfo
-name "ARCH E1"
-type 134
-width 2764
-height 3870
-)
-(PageSizeInfo
-name "ARCH E2"
-type 135
-width 2396
-height 3502
-)
-(PageSizeInfo
-name "ARCH E3"
-type 136
-width 2488
-height 3594
-)
-(PageSizeInfo
-name "A1"
-type 137
-width 2155
-height 3051
-)
-(PageSizeInfo
-name "A0"
-type 138
-width 3051
-height 4313
-)
-(PageSizeInfo
-name "Oversize A2"
-type 139
-width 1741
-height 2268
-)
-(PageSizeInfo
-name "Oversize A1"
-type 140
-width 2268
-height 3265
-)
-(PageSizeInfo
-name "Oversize A0"
-type 141
-width 3265
-height 4516
-)
-(PageSizeInfo
-name "ISO B5"
-type 142
-width 638
-height 907
-)
-(PageSizeInfo
-name "ISO B4"
-type 143
-width 907
-height 1281
-)
-(PageSizeInfo
-name "ISO B2"
-type 144
-width 1813
-height 2564
-)
-(PageSizeInfo
-name "ISO B1"
-type 145
-width 2564
-height 3628
-)
-(PageSizeInfo
-name "C5"
-type 146
-width 587
-height 830
-)
-(PageSizeInfo
-name "JIS B4"
-type 147
+name "B4 (JIS)"
+type 12
 width 932
 height 1320
 )
 (PageSizeInfo
-name "JIS B3"
-type 148
-width 1320
-height 1868
+name "B5 (JIS)"
+type 13
+width 660
+height 932
 )
 (PageSizeInfo
-name "JIS B2"
-type 149
-width 1868
-height 2641
+name "11×17"
+type 17
+width 1013
+height 1566
 )
 (PageSizeInfo
-name "JIS B1"
-type 150
-width 2641
-height 3737
+name "Envelope #10"
+type 20
+width 379
+height 875
 )
 (PageSizeInfo
-name "JIS B0"
-type 151
-width 3737
-height 5282
+name "Envelope DL"
+type 27
+width 399
+height 798
 )
 (PageSizeInfo
-name "92 x 92"
-type 152
-width 8478
-height 8478
+name "Envelope C5"
+type 28
+width 587
+height 830
 )
 (PageSizeInfo
-name "Slide 7.5 x 10"
-type 153
-width 691
-height 921
+name "Envelope B5"
+type 34
+width 638
+height 907
 )
 (PageSizeInfo
-name "Dimension de papier personnalisée PostScript"
-type 32767
-width 761
-height 1077
+name "Envelope Monarch"
+type 37
+width 357
+height 691
+)
+(PageSizeInfo
+name "Japanese Postcard"
+type 43
+width 362
+height 536
+)
+(PageSizeInfo
+name "A6"
+type 70
+width 380
+height 536
+)
+(PageSizeInfo
+name "Double Japan Postcard Rotated"
+type 82
+width 536
+height 725
+)
+(PageSizeInfo
+name "Executive (JIS)"
+type 119
+width 783
+height 1196
+)
+(PageSizeInfo
+name "Oficio 8.5x13"
+type 120
+width 783
+height 1198
+)
+(PageSizeInfo
+name "12x18"
+type 121
+width 1105
+height 1658
+)
+(PageSizeInfo
+name "8K 273x394 mm"
+type 139
+width 990
+height 1428
+)
+(PageSizeInfo
+name "16K 197x273 mm"
+type 140
+width 714
+height 990
 )
 ]
 exportPageSetupInfo (PageSetupInfo
@@ -6396,9 +6300,9 @@ displayHierarchy 0
 xPos 0
 yPos 0
 width 1936
-height 1056
+height 1066
 activeSidePanelTab 2
-activeLibraryTab 1
+activeLibraryTab 4
 sidePanelSize 278
 showUnixHiddenFiles 0
 componentBrowserXpos 216
@@ -6411,6 +6315,7 @@ componentBrowserLibraryNames [
 "gates"
 "sequential"
 "Memory"
+"operators"
 ]
 )
 (SmPreferences
