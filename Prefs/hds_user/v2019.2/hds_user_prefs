@@ -4189,7 +4189,6 @@ second ""
 ]
 mwParamsVisibility (mwParamsVisibilityOptions
 )
-autoPopupExprBuilder 0
 showExprBldrHint 0
 searchStrings [
 ]

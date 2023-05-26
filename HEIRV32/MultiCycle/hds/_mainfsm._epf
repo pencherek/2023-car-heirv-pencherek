@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom controller
+DEFAULT_FILE atom mainFSM_controller.vhd
