@@ -1,2 +1,2 @@
-DEFAULT_ARCHITECTURE atom controller
-DEFAULT_FILE atom mainFSM_controller.vhd
+DEFAULT_ARCHITECTURE atom fsm
+DEFAULT_FILE atom main@f@s@m/fsm.sm

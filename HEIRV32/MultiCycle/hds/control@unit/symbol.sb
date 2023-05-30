@@ -724,19 +724,19 @@ value "C:\\Users\\noah.penchere\\Documents\\git\\2023-car-heirv-pencherek\\Prefs
 )
 (vvPair
 variable "date"
-value "26.05.2023"
+value "30.05.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "26"
+value "30"
 )
 (vvPair
 variable "entity_name"
@@ -764,7 +764,7 @@ value "noah.penchere"
 )
 (vvPair
 variable "graphical_source_date"
-value "26.05.2023"
+value "30.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -776,7 +776,7 @@ value "WE2330806"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:20:52"
+value "09:23:29"
 )
 (vvPair
 variable "group"
@@ -852,7 +852,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:20:52"
+value "09:23:29"
 )
 (vvPair
 variable "unit"
@@ -2449,7 +2449,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 607,0
+lastUid 653,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"
