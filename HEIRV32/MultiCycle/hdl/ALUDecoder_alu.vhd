@@ -23,8 +23,8 @@ begin
 						ALUControl <= "000";
 					end if;
 				when "010" => ALUControl <= "101";
-				when "110" => ALUControl <= "010";
-				when "111" => ALUControl <= "011";
+				when "110" => ALUControl <= "011";
+				when "111" => ALUControl <= "010";
 				when others => ALUControl <= "---";
 			end case;
 		when others => ALUControl <= "---";
