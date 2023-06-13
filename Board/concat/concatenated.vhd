@@ -15,7 +15,7 @@ ENTITY ebs3_mc IS
         c_btnsNb           : positive := 2;
         c_clockFrequencyHz : positive := 50000000;
         c_dataWidth        : positive := 32;
-        c_programFile      : string   := "C:/Users/noah.penchere/Documents/git/2023-car-heirv-pencherek/Simulation/code_mc_ebs3_bram.txt"
+        c_programFile      : string   := "$SIMULATION_DIR/code_mc_ebs3_bram.txt"
     );
     PORT( 
         btns      : IN     std_ulogic_vector (c_btnsNb-1 DOWNTO 0);
@@ -63,8 +63,8 @@ END gates;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY freqDivider IS
     GENERIC( 
@@ -266,8 +266,8 @@ END CommonLib;
 
 
 
--- LIBRARY Common;
-  use work.CommonLib.all;
+LIBRARY Common;
+  USE Common.CommonLib.all;
 
 ARCHITECTURE RTL OF freqDivider IS
 
@@ -306,8 +306,8 @@ END ARCHITECTURE RTL;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY TFF IS
     GENERIC( 
@@ -360,8 +360,8 @@ END sim;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY bufferUlogic IS
     GENERIC( 
@@ -398,8 +398,8 @@ END ARCHITECTURE sim;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY inverter IS
     GENERIC( 
@@ -436,8 +436,8 @@ END sim;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY or2 IS
     GENERIC( 
@@ -678,7 +678,7 @@ LIBRARY ieee;
 
 ENTITY heirv32_mc IS
     GENERIC( 
-        g_programFile : string   := "C:/Users/noah.penchere/Documents/git/2023-car-heirv-pencherek/Simulation/code.txt";
+        g_programFile : string   := "$SIMULATION_DIR/code.txt";
         g_btnsNb      : positive := 2;
         g_dataWidth   : positive := 32
     );
@@ -711,8 +711,8 @@ END heirv32_mc ;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY mux4To1ULogVec IS
     GENERIC( 
@@ -766,8 +766,8 @@ END ARCHITECTURE rtl;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY and2 IS
     GENERIC( 
@@ -805,8 +805,8 @@ END ARCHITECTURE sim;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY logic1 IS
     PORT( 
@@ -840,8 +840,8 @@ END sim;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY mux2to1Unsigned IS
     GENERIC( 
@@ -900,8 +900,8 @@ END ARCHITECTURE sim;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY transUlogUnsigned IS
     GENERIC( 
@@ -940,8 +940,8 @@ END ARCHITECTURE sim;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY transUnsignedUlog IS
     GENERIC( 
@@ -1033,8 +1033,8 @@ END ARCHITECTURE rtl;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY bufferStdULogEnable IS
     GENERIC( 
@@ -1088,8 +1088,8 @@ END ARCHITECTURE rtl;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY ALU IS
     GENERIC( 
@@ -1135,8 +1135,8 @@ process LLL; enD architectUre LLlLll;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY controlUnit IS
     GENERIC( 
@@ -1181,8 +1181,8 @@ END controlUnit ;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY InstrDecoder IS
     PORT( 
@@ -1239,8 +1239,8 @@ END ARCHITECTURE instr;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY ALUDecoder IS
     PORT( 
@@ -1308,8 +1308,8 @@ END ARCHITECTURE alu;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY mainFSM IS
     PORT( 
@@ -1349,8 +1349,8 @@ END mainFSM ;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
  
 ARCHITECTURE fsm OF mainFSM IS
 
@@ -1690,10 +1690,10 @@ END fsm;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
--- LIBRARY HEIRV32_MC;
+LIBRARY HEIRV32_MC;
 
 ARCHITECTURE studentVersion OF controlUnit IS
 
@@ -1763,11 +1763,11 @@ ARCHITECTURE studentVersion OF controlUnit IS
 
     -- Optional embedded configurations
     -- pragma synthesis_off
---     FOR ALL : ALUDecoder USE ENTITY HEIRV32_MC.ALUDecoder;
---     FOR ALL : InstrDecoder USE ENTITY HEIRV32_MC.InstrDecoder;
---     FOR ALL : and2 USE ENTITY gates.and2;
---     FOR ALL : mainFSM USE ENTITY HEIRV32_MC.mainFSM;
---     FOR ALL : or2 USE ENTITY gates.or2;
+    FOR ALL : ALUDecoder USE ENTITY HEIRV32_MC.ALUDecoder;
+    FOR ALL : InstrDecoder USE ENTITY HEIRV32_MC.InstrDecoder;
+    FOR ALL : and2 USE ENTITY gates.and2;
+    FOR ALL : mainFSM USE ENTITY HEIRV32_MC.mainFSM;
+    FOR ALL : or2 USE ENTITY gates.or2;
     -- pragma synthesis_on
 
 
@@ -1839,8 +1839,8 @@ END studentVersion;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY extend IS
     GENERIC( 
@@ -1884,8 +1884,8 @@ AFTer g_Text; wHEn "11" => LLLl <= (20 to 31 => InPuT(31)) & InPUt(19 dOWntO 12)
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY instructionDataManager IS
     GENERIC( 
@@ -1924,8 +1924,8 @@ END instructionDataManager ;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY instructionDataMemory IS
     GENERIC( 
@@ -1961,8 +1961,8 @@ END instructionDataMemory ;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY DFF_pre IS
     GENERIC( 
@@ -2010,8 +2010,8 @@ END sim;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY logic0 IS
     PORT( 
@@ -2126,8 +2126,8 @@ END ARCHITECTURE rtl;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY bramAddrReducer IS
     GENERIC( 
@@ -2170,12 +2170,12 @@ END ARCHITECTURE rtl;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
--- LIBRARY HEIRV32;
--- LIBRARY Memory;
--- LIBRARY sequential;
+LIBRARY HEIRV32;
+LIBRARY Memory;
+LIBRARY sequential;
 
 ARCHITECTURE struct OF instructionDataMemory IS
 
@@ -2243,11 +2243,11 @@ ARCHITECTURE struct OF instructionDataMemory IS
 
     -- Optional embedded configurations
     -- pragma synthesis_off
---     FOR ALL : DFF_pre USE ENTITY sequential.DFF_pre;
---     FOR ALL : bramAddrReducer USE ENTITY HEIRV32.bramAddrReducer;
---     FOR ALL : bramHexAsciiInit USE ENTITY Memory.bramHexAsciiInit;
---     FOR ALL : logic0 USE ENTITY gates.logic0;
---     FOR ALL : or2 USE ENTITY gates.or2;
+    FOR ALL : DFF_pre USE ENTITY sequential.DFF_pre;
+    FOR ALL : bramAddrReducer USE ENTITY HEIRV32.bramAddrReducer;
+    FOR ALL : bramHexAsciiInit USE ENTITY Memory.bramHexAsciiInit;
+    FOR ALL : logic0 USE ENTITY gates.logic0;
+    FOR ALL : or2 USE ENTITY gates.or2;
     -- pragma synthesis_on
 
 
@@ -2317,8 +2317,8 @@ END struct;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY instructionForwarder IS
     GENERIC( 
@@ -2414,10 +2414,10 @@ END ARCHITECTURE rtl;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
--- LIBRARY HEIRV32_MC;
+LIBRARY HEIRV32_MC;
 
 ARCHITECTURE struct OF instructionDataManager IS
 
@@ -2462,8 +2462,8 @@ ARCHITECTURE struct OF instructionDataManager IS
 
     -- Optional embedded configurations
     -- pragma synthesis_off
---     FOR ALL : instructionDataMemory USE ENTITY HEIRV32_MC.instructionDataMemory;
---     FOR ALL : instructionForwarder USE ENTITY HEIRV32_MC.instructionForwarder;
+    FOR ALL : instructionDataMemory USE ENTITY HEIRV32_MC.instructionDataMemory;
+    FOR ALL : instructionForwarder USE ENTITY HEIRV32_MC.instructionForwarder;
     -- pragma synthesis_on
 
 
@@ -2517,8 +2517,8 @@ END struct;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
 ENTITY registerFile IS
     GENERIC( 
@@ -2634,11 +2634,11 @@ END ARCHITECTURE rtl_synch;
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
--- LIBRARY HEIRV32;
--- LIBRARY HEIRV32_MC;
+LIBRARY HEIRV32;
+LIBRARY HEIRV32_MC;
 
 ARCHITECTURE studentVersion OF heirv32_mc IS
 
@@ -2858,19 +2858,19 @@ ARCHITECTURE studentVersion OF heirv32_mc IS
 
     -- Optional embedded configurations
     -- pragma synthesis_off
---     FOR ALL : ALU USE ENTITY HEIRV32.ALU;
---     FOR ALL : and2 USE ENTITY gates.and2;
---     FOR ALL : bufferStdULogEnable USE ENTITY HEIRV32.bufferStdULogEnable;
---     FOR ALL : bufferUnsignedEnable USE ENTITY HEIRV32.bufferUnsignedEnable;
---     FOR ALL : controlUnit USE ENTITY HEIRV32_MC.controlUnit;
---     FOR ALL : extend USE ENTITY HEIRV32.extend;
---     FOR ALL : instructionDataManager USE ENTITY HEIRV32_MC.instructionDataManager;
---     FOR ALL : logic1 USE ENTITY gates.logic1;
---     FOR ALL : mux2to1Unsigned USE ENTITY gates.mux2to1Unsigned;
---     FOR ALL : mux4To1ULogVec USE ENTITY HEIRV32.mux4To1ULogVec;
---     FOR ALL : registerFile USE ENTITY HEIRV32.registerFile;
---     FOR ALL : transUlogUnsigned USE ENTITY gates.transUlogUnsigned;
---     FOR ALL : transUnsignedUlog USE ENTITY gates.transUnsignedUlog;
+    FOR ALL : ALU USE ENTITY HEIRV32.ALU;
+    FOR ALL : and2 USE ENTITY gates.and2;
+    FOR ALL : bufferStdULogEnable USE ENTITY HEIRV32.bufferStdULogEnable;
+    FOR ALL : bufferUnsignedEnable USE ENTITY HEIRV32.bufferUnsignedEnable;
+    FOR ALL : controlUnit USE ENTITY HEIRV32_MC.controlUnit;
+    FOR ALL : extend USE ENTITY HEIRV32.extend;
+    FOR ALL : instructionDataManager USE ENTITY HEIRV32_MC.instructionDataManager;
+    FOR ALL : logic1 USE ENTITY gates.logic1;
+    FOR ALL : mux2to1Unsigned USE ENTITY gates.mux2to1Unsigned;
+    FOR ALL : mux4To1ULogVec USE ENTITY HEIRV32.mux4To1ULogVec;
+    FOR ALL : registerFile USE ENTITY HEIRV32.registerFile;
+    FOR ALL : transUlogUnsigned USE ENTITY gates.transUlogUnsigned;
+    FOR ALL : transUnsignedUlog USE ENTITY gates.transUnsignedUlog;
     -- pragma synthesis_on
 
 
@@ -3218,8 +3218,8 @@ end architecture Structure;
 --
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
--- LIBRARY gates;
-  use work.gates.all;
+LIBRARY gates;
+  USE gates.gates.all;
 
 ENTITY DFF IS
     GENERIC( 
@@ -3270,13 +3270,13 @@ LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;
 
--- LIBRARY gates;
-use work.gates.all;
+LIBRARY gates;
+USE gates.gates.all;
 
--- LIBRARY common;
--- LIBRARY HEIRV32;
--- LIBRARY HEIRV32_MC;
--- LIBRARY sequential;
+LIBRARY common;
+LIBRARY HEIRV32;
+LIBRARY HEIRV32_MC;
+LIBRARY sequential;
 
 ARCHITECTURE struct OF ebs3_mc IS
 
@@ -3365,7 +3365,7 @@ ARCHITECTURE struct OF ebs3_mc IS
     END COMPONENT;
     COMPONENT heirv32_mc
     GENERIC (
-        g_programFile : string   := "C:/Users/noah.penchere/Documents/git/2023-car-heirv-pencherek/Simulation/code.txt";
+        g_programFile : string   := "$SIMULATION_DIR/code.txt";
         g_btnsNb      : positive := 2;
         g_dataWidth   : positive := 32
     );
@@ -3415,17 +3415,17 @@ ARCHITECTURE struct OF ebs3_mc IS
 
     -- Optional embedded configurations
     -- pragma synthesis_off
---     FOR ALL : DFF USE ENTITY sequential.DFF;
---     FOR ALL : TFF USE ENTITY sequential.TFF;
---     FOR ALL : bufferUlogic USE ENTITY gates.bufferUlogic;
---     FOR ALL : debouncer USE ENTITY common.debouncer;
---     FOR ALL : edgeDetector USE ENTITY common.edgeDetector;
---     FOR ALL : freqDivider USE ENTITY sequential.freqDivider;
---     FOR ALL : heirv32_mc USE ENTITY HEIRV32_MC.heirv32_mc;
---     FOR ALL : inverter USE ENTITY gates.inverter;
---     FOR ALL : lattice_pll USE ENTITY HEIRV32.lattice_pll;
---     FOR ALL : logic1 USE ENTITY gates.logic1;
---     FOR ALL : or2 USE ENTITY gates.or2;
+    FOR ALL : DFF USE ENTITY sequential.DFF;
+    FOR ALL : TFF USE ENTITY sequential.TFF;
+    FOR ALL : bufferUlogic USE ENTITY gates.bufferUlogic;
+    FOR ALL : debouncer USE ENTITY common.debouncer;
+    FOR ALL : edgeDetector USE ENTITY common.edgeDetector;
+    FOR ALL : freqDivider USE ENTITY sequential.freqDivider;
+    FOR ALL : heirv32_mc USE ENTITY HEIRV32_MC.heirv32_mc;
+    FOR ALL : inverter USE ENTITY gates.inverter;
+    FOR ALL : lattice_pll USE ENTITY HEIRV32.lattice_pll;
+    FOR ALL : logic1 USE ENTITY gates.logic1;
+    FOR ALL : or2 USE ENTITY gates.or2;
     -- pragma synthesis_on
 
 

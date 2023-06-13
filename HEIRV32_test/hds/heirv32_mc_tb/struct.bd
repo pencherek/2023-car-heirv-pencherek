@@ -40,7 +40,7 @@ elements [
 (GiElement
 name "g_programFile"
 type "string"
-value "\"$SIMULATION_DIR/code_sim_bram.txt\""
+value "\"$SIMULATION_DIR/test_perso_bram.txt\""
 )
 (GiElement
 name "g_btnsNb"
@@ -113,7 +113,7 @@ value "C:\\Users\\noah.penchere\\Documents\\git\\2023-car-heirv-pencherek\\Prefs
 )
 (vvPair
 variable "date"
-value "30.05.2023"
+value "13.06.2023"
 )
 (vvPair
 variable "day"
@@ -125,7 +125,7 @@ value "mardi"
 )
 (vvPair
 variable "dd"
-value "30"
+value "13"
 )
 (vvPair
 variable "entity_name"
@@ -153,7 +153,7 @@ value "noah.penchere"
 )
 (vvPair
 variable "graphical_source_date"
-value "30.05.2023"
+value "13.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -165,7 +165,7 @@ value "WE2330806"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:58:26"
+value "08:32:49"
 )
 (vvPair
 variable "group"
@@ -193,7 +193,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32_test/work"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -201,11 +201,11 @@ value "heirv32_mc_tb"
 )
 (vvPair
 variable "month"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -241,7 +241,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "09:58:26"
+value "08:32:49"
 )
 (vvPair
 variable "unit"
@@ -294,7 +294,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "49200,4000,60600,5000"
+xt "49200,4000,61600,5000"
 st "
 by %user on %dd %month %year
 "
@@ -1323,10 +1323,11 @@ uid 1261,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "24000,25800,60500,28200"
-st "g_programFile = \"$SIMULATION_DIR/code_sim_bram.txt\"    ( string   )  
-g_btnsNb      = c_btnsNb                               ( positive )  
-g_dataWidth   = 32                                     ( positive )  "
+xt "24000,25800,61500,28200"
+st "g_programFile = \"$SIMULATION_DIR/test_perso_bram.txt\"    ( string   )  
+g_btnsNb      = c_btnsNb                                 ( positive )  
+g_dataWidth   = 32                                       ( positive )  
+"
 )
 header ""
 )
@@ -1334,7 +1335,7 @@ elements [
 (GiElement
 name "g_programFile"
 type "string"
-value "\"$SIMULATION_DIR/code_sim_bram.txt\""
+value "\"$SIMULATION_DIR/test_perso_bram.txt\""
 )
 (GiElement
 name "g_btnsNb"
@@ -1707,7 +1708,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1316,0
+lastUid 1339,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
