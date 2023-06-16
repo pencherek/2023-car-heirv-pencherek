@@ -18,9 +18,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Temp/eda/noah.penchere/car-heirv/Board/diamond/car-heirv.bit</File>
-			<FileTime>05/17/23 08:58:49</FileTime>
-			<JedecChecksum>0xBBFB</JedecChecksum>
+			<File>C:/Temp/eda/noah.penchere/car-heirv/Board/diamond/toplevel/car-heirv_toplevel.bit</File>
+			<FileTime>06/16/23 10:05:33</FileTime>
+			<JedecChecksum>0x7744</JedecChecksum>
 			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

@@ -42,9 +42,9 @@ main:
 	#   x2 is slt res.
 	#   x3, x4 (1) are for blinking wait led
 	mv   x1 x0
-	sub  x3 x3 x4
-	andi x3 x3 1
-	or   leds leds x3
+	#sub  x3 x3 x4
+	#andi x3 x3 1
+	#or   leds leds x3
 wait:
 	slt  x2 x1 x20
 	beq  x2 x0 wait_end
@@ -74,7 +74,7 @@ btn2:
 
 # No buttons are pressed
 end:
-	li   leds x7
+	add   leds zero x7
 	jal  main
 
 # Life saver ! Keep it
